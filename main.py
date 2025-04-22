@@ -11,7 +11,7 @@ from google.genai import types
 
 
 # Load models
-embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+embed_model = SentenceTransformer('./all-MiniLM-L6-v2')
 index = faiss.read_index("faiss_index.index")
 with open("metadata.json") as f:
     metadata = json.load(f)
